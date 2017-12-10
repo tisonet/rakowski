@@ -2767,7 +2767,8 @@ form .has-error .btn-primary{
 .photo-name{
 	font-family: 'Great Vibes', cursive; 
 	font-size:75px; 
-	color:#FFF; 
+	color:#FFF;
+	line-height: 50px;
 }
 
 .photo-name.his-front-name{
