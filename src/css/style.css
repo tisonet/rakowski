@@ -3214,549 +3214,564 @@ button.mfp-close, button.mfp-arrow {
 
 }
 
-@media screen and (max-width: 991px) {	
-
-/*===============================================*/
-/* 01. GENERAL			 						 */
-/*===============================================*/
-.hide-on-mobile{
-	display:none;
-}
-
-.hide-on-desktop{
-	display:block;
-}
-
-/*===============================================*/
-/* 02. NAV BAR 	 							 	 */
-/*===============================================*/
-#nav-bar-sticky-wrapper{
-	height:90px !important;
-}
-
-/* ----------------------------------------------*/
-/* 02.1 Width & Color (Nav Bar)			 		 */
-/* ----------------------------------------------*/
-/* 02.1.1 Fixed-width */
-/* 02.1.2 Fluid-width */
-#nav-bar.fluid-width #nav-wrapper,
-#nav-bar.fixed-width #nav-wrapper{
-	padding:0px 30px
-}
-
-/* ----------------------------------------------*/
-/* 02.2 Logo & Nav Position	 					 */
-/* ----------------------------------------------*/
-.logo-wrapper{
-	margin-top:15px !important;
-}
-
-#nav-menu { display: none }
-#nav-menu.sidebar {display:block}	
-#nav-menu.open { display: block; }
-
-#nav-menu,
-.bottom-bar.transparent #nav-menu{	
-	list-style-type:none; 
-	margin:0; 
-	padding:0 !important; 
-	position:absolute;
-	left:0;
-	top:100%;
-	clear:both !important;
-	text-align:left !important;
-	width:100% !important;
-	background-color:#FFF;
-	height:330px;
-	overflow:auto;
-}
-
-.transparent #nav-menu{
-	width:80% !important;
-	position:absolute; 
-	margin:auto; 
-	top:100%; 
-	left:0; 
-	right:0;
-}
-
-.transparent.stick-it #nav-menu{
-	width:100% !important;
-}
-
-/* 02.2.1 Nav Center */
-/* 02.2.2 Nav Left 	 */
-/* 02.2.3 Nav Right  */
-#nav-bar.nav-center .logo-wrapper,
-#nav-bar.nav-left .logo-wrapper,
-#nav-bar.nav-right .logo-wrapper{
-	position:relative;
-	float:left;	
-}
-
-#nav-bar.nav-center.hide-logo-on-desktop .logo-wrapper{
-	display:block;
-}
-
-
-/*===============================================*/
-/* 03. NAV MENU	 	 							 */
-/*===============================================*/
-
-/* ----------------------------------------------*/
-/* 03.1 Parent Menu 						     */
-/* ----------------------------------------------*/
-#nav-menu, #nav-menu ul{
-	-webkit-overflow-scrolling : touch;
-}
-
-#nav-menu ul{
-	width:100%;
-	left:0;
-	padding:0 !important;
-}
-
-#nav-menu li{
-	position:relative;
-}
-
-#nav-menu li a{
-	display:block;
-	width:100%;
-	margin:0;
-	color:#666;
-	/*border-bottom:solid thin #f4f2f2;*/
-	border:none !important;
-	border-bottom:solid thin #dcdcdc !important;
-	border-radius:0 !important;
-	padding:18px 20px;
-}
-
-.transparent #nav-menu li a{
-	color:#666;
-}
-
-#nav-menu li a:hover{
-	background-color:#f98d8a !important;
-	color:#FFF !important;
-}
-
-#nav-menu li a.active,
-.transparent #nav-menu li a.active{
-	color:#f98d8a;
-	background-color:#FFF;
-}
-
-#nav-menu li:before{
-	content: '';
-}
-
-/* 03.1.2 Additional Class For Nav Center */
-/* ----------------------------------------------*/
-.nav-center .first-child-margin,
-.nav-center .last-child-margin,
-.nav-center .split-margin{
-	margin:0
-}
-
-/* ----------------------------------------------*/
-/* 03.2 Child Menu 								 */
-/* ----------------------------------------------*/
-#nav-menu ul{
-	display:block;
-	width:100%;
-	position:relative;
-	top:0;
-	text-align:left;
-	border-top:none;
-}
-
-#nav-menu li > ul li a:before{ 
-	content: '-';
-	padding-right:10px;
-} 
-
-#nav-menu ul li:first-child a{
-	border-radius:0;
-} 
-
-#nav-menu ul li:last-child a{
-	border-radius:0;
-}   
-  
-
-/* 03.2.2 Child-Parent Arrow */
-/* ----------------------------------------------*/
-#nav-menu li > ul li a:after { 
-	content: '';
-} 
-
-
-/* 03.2.3 More Child */
-/* ----------------------------------------------*/
-#nav-menu ul ul{
-	display:block;
-	width:100%;
-	position:relative;
-	top:0;
-	left:0;
-	border:none;
-	padding:0 !important;
-}
-
-#nav-menu ul ul li a:before{ 
-	content: '- -';
-	padding-right:10px;
-} 
-
-#nav-menu ul ul ul li a:before{ 
-	content: '- - -';
-	padding-right:10px;
-} 
-
-#nav-menu ul ul.on-left{
-	left:0;
-}
-
-
-/* ----------------------------------------------*/
-/* 03.3 Mobile Nav								 */
-/* ----------------------------------------------*/
-#mobile-nav{
-	display:block;
-	position:relative;
-	float:right;
-	font-size:28px;
-	margin-top:30px;
-	z-index:1000;
-}
-
-.transparent #mobile-nav{	
-	color:#FFF;
-}
-
-.transparent.stick-it #mobile-nav{
-	color:#666;	
-}
-
-
-/* 06.2.1 Main Slider Flexslider Control Nav & Paging */
-/* ----------------------------------------------*/
-#main-slider.flexslider:hover .flex-prev { opacity:0.4;  left: 20px; }
-#main-slider.flexslider:hover .flex-next { opacity:0.4; right: 20px; }
-#main-slider.flexslider .flex-direction-nav .flex-prev { opacity:0.4; left: 20px; }
-#main-slider.flexslider .flex-direction-nav .flex-next { opacity:0.4; right: 20px; }
-
-
-/* 06.4.5 Couple Name Title 					 */
-/* ----------------------------------------------*/
-#slide-couplename-wrapper{
-	margin-top:0;
-}
-
-/* 07.1.3 Image & Video Divider					 */
-/* ----------------------------------------------*/
-.divider-wrapper{
-	padding:70px 0;
-}
-
-.image-divider {
-	background-attachment: scroll;
-}
-
-/*-----------------------------------------------*/
-/* 07.1.5 Popup Template						 */
-/*-----------------------------------------------*/
-#popup-template{
-	width:90%;
-}
-
-/*-----------------------------------------------*/
-/* 07.1.7 Popup Video							 */
-/*-----------------------------------------------*/
-.popup-video{
-	width:80%;
-}
-
-/*-----------------------------------------------*/
-/* 07.1.9 Box Countdown							 */
-/*-----------------------------------------------*/
-.box-countdown .countdown-amount {
-	font-size:30px;
-	width:80%;	
-	padding-top:38px;
-}
-
-.box-countdown .countdown-period {
-	font-size:16px;  
-	top:75px;
-	left:0;
-	right:0;
-	margin:auto;
-}
-
-/*-----------------------------------------------*/
-/* 07.1.11 Section Block						 */
-/*-----------------------------------------------*/
-.content-block{
-	padding:60px 0;
-}
-
-
-/* ----------------------------------------------*/
-/* 16.1 Our Story Section						 */
-/* ----------------------------------------------*/
-.story-row.row {
-    display: block;
-	padding:20px 0
-}
-
-.story-row.row [class*="col-"] {
-    display: block;
-	text-align:center;
-}
-
-.story-date-wrapper{
-	margin-bottom:55px;
-}
-
-.story-date{
-	float:none;
-	position:absolute;	
-	top:-45px;
-	left:0;
-	right:0;
-	margin:auto;
-}
-
-.story-date .month-year{
-	font-family: 'Oswald', sans-serif; 
-	font-size:16px; 
-	color:#FFF;
-}
-
-.arrow-right {
-	display:none;
-	float:none;
-}
-
-.arrow-left {
-	display:none;
-	float:none;
-}
-
-.vertical-line{
-	display:none;
-}
-
-#last-row-date-wrapper .story-date{
-	position:relative;	
-	top:0;
-}
-
-#last-row-date-wrapper{
-	position:relative;
-	padding:0;	
-	margin-top:30px;
-}
-
-#end-of-story{
-	margin-top:20px;
-	margin-bottom:0px;
-}
-
-
-@media screen and (max-width: 991px) and (orientation : landscape) {
-	
-/*===============================================*/
-/* 01. GENERAL			 						 */
-/*===============================================*/
-.scale75-onmobile{
-	-ms-transform: scale(0.75, 0.75); 
-	-webkit-transform: scale(0.75, 0.75);
-	transform: scale(0.75, 0.75);
-}
-
-/* ----------------------------------------------*/
-/* 02.2 Logo & Nav Position						 */
-/* ----------------------------------------------*/
-#nav-menu{	
-	height:230px !important;
-}	
-	
-/* 06.4.5 Couple Name Title 					 */
-/* ----------------------------------------------*/
-#slide-couplename-wrapper{
-	margin-top:0;
-}
-
-#slide-other-text{
-	font-size:12px; 
-	letter-spacing:4px; 
-	margin-top:50px;
-}
-}
-
-
-@media screen and (max-width: 768px) {	
-
-/*-----------------------------------------------*/
-/* 07.1.9 Box Countdown							 */
-/*-----------------------------------------------*/
-.box-countdown{
-	height:120px;
-	margin-bottom:20px;
-}
-
-.box-countdown .countdown-amount {
-	font-size:30px;
-	width:80%;	
-	padding-top:34px;
-}
-
-.box-countdown .countdown-period {
-	font-size:16px;  
-	top:64px;
-	left:0;
-	right:0;
-	margin:auto;
-}
-
-/*===============================================*/
-/* 12. FORM										 */
-/*===============================================*/
-form .btn{
-	width:100%;
-	white-space:normal;
-}
-}
-
-
-@media screen and (max-width: 480px){	
-
-/*===============================================*/
-/* 01. GENERAL			 						 */
-/*===============================================*/
-h1, .h1{
-	font-size:45px;
-	letter-spacing:3px;
-}
-
-h1#accomodation-title{
-	font-size:36px;
-	letter-spacing:2px;
-}
-
-.scale75-onmobile{
-	-ms-transform: scale(0.75, 0.75); 
-	-webkit-transform: scale(0.75, 0.75);
-	transform: scale(0.75, 0.75);
-}
-
-/* 06.4.3 Title Wrapper */
-/* ----------------------------------------------*/
-.slide-title h1, 
-.slide-title .h1{
-	margin-top:10px;
-	margin-bottom:10px;
-}
-
-/* 06.4.5 Couple Name Title 					 */
-/* ----------------------------------------------*/
-#slide-couplename-wrapper{
-	margin-top:0;
-}
-
-#slide-other-text{
-	font-size:12px; 
-	letter-spacing:4px; 
-	margin-top:50px;
-}
-
-/* 07.1.1 Title-Excerpt White Box				 */
-/* ----------------------------------------------*/
-.title-excerpt{
-	padding:20px;
-}
-
-/*-----------------------------------------------*/
-/* 07.1.5 Popup Template						 */
-/*-----------------------------------------------*/
-#popup-template #the-content{
-	padding-right:30px;
-	padding-left:30px;
-	text-align:center;
-}
-
-/*-----------------------------------------------*/
-/* 07.1.9 Box Countdown							 */
-/*-----------------------------------------------*/
-.box-countdown{
-	height:90px;
-}
-
-.box-countdown .countdown-amount {
-	font-size:26px;
-	width:80%;	
-	padding-top:20px;
-}
-
-.box-countdown .countdown-period {
-	font-size:14px;  
-	top:50px;
-	left:0;
-	right:0;
-	margin:auto;
-}	
-
-/*-----------------------------------------------*/
-/* 07.1.10 Circle Countdown						*/
-/*-----------------------------------------------*/
-.circle-countdown .countdown-amount {
-	width:45px;
-	height:45px;
-	padding-top:9px;
-	font-size:20px;
-}
-
-.circle-countdown .countdown-period {
-	padding:10px;
-	display:block;
-	text-align:center;
-	font-size:12px;
-	text-transform:uppercase;    
-}
-
-/*===============================================*/
-/* 11 MASONRY GALLERY							 */
-/*===============================================*/
-.masonry-col, .grid-sizer{
-	width:100% !important;
-	margin-bottom:5% !important;
-}
-
-/* ----------------------------------------------*/
-/* 15.1 About / Story Page		 			 	 */
-/* ----------------------------------------------*/
-.profile-photo{
-	width:140px;
-	height:140px;
-}
-}
-
-
-@media screen and (max-width: 320px) {
-/* ----------------------------------------------*/
-/* 13.1 Couple Section							 */
-/* ----------------------------------------------*/
-.couple-excerpt{
-	margin-top:20px;
-}
-
-/* ----------------------------------------------*/
-/* 13.4 Footer Section				 			 */
-/* ----------------------------------------------*/
-footer .image-divider.fixed-height{
-	 height:400px;
-}
+@media screen and (max-width: 991px) {
+
+	/*===============================================*/
+	/* 01. GENERAL			 						 */
+	/*===============================================*/
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.hide-on-desktop {
+		display: block;
+	}
+
+	/*===============================================*/
+	/* 02. NAV BAR 	 							 	 */
+	/*===============================================*/
+	#nav-bar-sticky-wrapper {
+		height: 90px !important;
+	}
+
+	/* ----------------------------------------------*/
+	/* 02.1 Width & Color (Nav Bar)			 		 */
+	/* ----------------------------------------------*/
+	/* 02.1.1 Fixed-width */
+	/* 02.1.2 Fluid-width */
+	#nav-bar.fluid-width #nav-wrapper,
+	#nav-bar.fixed-width #nav-wrapper {
+		padding: 0px 30px
+	}
+
+	/* ----------------------------------------------*/
+	/* 02.2 Logo & Nav Position	 					 */
+	/* ----------------------------------------------*/
+	.logo-wrapper {
+		margin-top: 15px !important;
+	}
+
+	#nav-menu {
+		display: none
+	}
+
+	#nav-menu.sidebar {
+		display: block
+	}
+
+	#nav-menu.open {
+		display: block;
+	}
+
+	#nav-menu,
+	.bottom-bar.transparent #nav-menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0 !important;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		clear: both !important;
+		text-align: left !important;
+		width: 100% !important;
+		background-color: #FFF;
+		height: 330px;
+		overflow: auto;
+	}
+
+	.transparent #nav-menu {
+		width: 80% !important;
+		position: absolute;
+		margin: auto;
+		top: 100%;
+		left: 0;
+		right: 0;
+	}
+
+	.transparent.stick-it #nav-menu {
+		width: 100% !important;
+	}
+
+	/* 02.2.1 Nav Center */
+	/* 02.2.2 Nav Left 	 */
+	/* 02.2.3 Nav Right  */
+	#nav-bar.nav-center .logo-wrapper,
+	#nav-bar.nav-left .logo-wrapper,
+	#nav-bar.nav-right .logo-wrapper {
+		position: relative;
+		float: left;
+	}
+
+	#nav-bar.nav-center.hide-logo-on-desktop .logo-wrapper {
+		display: block;
+	}
+
+	/*===============================================*/
+	/* 03. NAV MENU	 	 							 */
+	/*===============================================*/
+	/* ----------------------------------------------*/
+	/* 03.1 Parent Menu 						     */
+	/* ----------------------------------------------*/
+	#nav-menu, #nav-menu ul {
+		-webkit-overflow-scrolling: touch;
+	}
+
+	#nav-menu ul {
+		width: 100%;
+		left: 0;
+		padding: 0 !important;
+	}
+
+	#nav-menu li {
+		position: relative;
+	}
+
+	#nav-menu li a {
+		display: block;
+		width: 100%;
+		margin: 0;
+		color: #666;
+		/*border-bottom:solid thin #f4f2f2;*/
+		border: none !important;
+		border-bottom: solid thin #dcdcdc !important;
+		border-radius: 0 !important;
+		padding: 18px 20px;
+	}
+
+	.transparent #nav-menu li a {
+		color: #666;
+	}
+
+	#nav-menu li a:hover {
+		background-color: #f98d8a !important;
+		color: #FFF !important;
+	}
+
+	#nav-menu li a.active,
+	.transparent #nav-menu li a.active {
+		color: #f98d8a;
+		background-color: #FFF;
+	}
+
+	#nav-menu li:before {
+		content: '';
+	}
+
+	/* 03.1.2 Additional Class For Nav Center */
+	/* ----------------------------------------------*/
+	.nav-center .first-child-margin,
+	.nav-center .last-child-margin,
+	.nav-center .split-margin {
+		margin: 0
+	}
+
+	/* ----------------------------------------------*/
+	/* 03.2 Child Menu 								 */
+	/* ----------------------------------------------*/
+	#nav-menu ul {
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		text-align: left;
+		border-top: none;
+	}
+
+	#nav-menu li > ul li a:before {
+		content: '-';
+		padding-right: 10px;
+	}
+
+	#nav-menu ul li:first-child a {
+		border-radius: 0;
+	}
+
+	#nav-menu ul li:last-child a {
+		border-radius: 0;
+	}
+
+	/* 03.2.2 Child-Parent Arrow */
+	/* ----------------------------------------------*/
+	#nav-menu li > ul li a:after {
+		content: '';
+	}
+
+	/* 03.2.3 More Child */
+	/* ----------------------------------------------*/
+	#nav-menu ul ul {
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		border: none;
+		padding: 0 !important;
+	}
+
+	#nav-menu ul ul li a:before {
+		content: '- -';
+		padding-right: 10px;
+	}
+
+	#nav-menu ul ul ul li a:before {
+		content: '- - -';
+		padding-right: 10px;
+	}
+
+	#nav-menu ul ul.on-left {
+		left: 0;
+	}
+
+	/* ----------------------------------------------*/
+	/* 03.3 Mobile Nav								 */
+	/* ----------------------------------------------*/
+	#mobile-nav {
+		display: block;
+		position: relative;
+		float: right;
+		font-size: 28px;
+		margin-top: 30px;
+		z-index: 1000;
+	}
+
+	.transparent #mobile-nav {
+		color: #FFF;
+	}
+
+	.transparent.stick-it #mobile-nav {
+		color: #666;
+	}
+
+	/* 06.2.1 Main Slider Flexslider Control Nav & Paging */
+	/* ----------------------------------------------*/
+	#main-slider.flexslider:hover .flex-prev {
+		opacity: 0.4;
+		left: 20px;
+	}
+
+	#main-slider.flexslider:hover .flex-next {
+		opacity: 0.4;
+		right: 20px;
+	}
+
+	#main-slider.flexslider .flex-direction-nav .flex-prev {
+		opacity: 0.4;
+		left: 20px;
+	}
+
+	#main-slider.flexslider .flex-direction-nav .flex-next {
+		opacity: 0.4;
+		right: 20px;
+	}
+
+	/* 06.4.5 Couple Name Title 					 */
+	/* ----------------------------------------------*/
+	#slide-couplename-wrapper {
+		margin-top: 0;
+	}
+
+	/* 07.1.3 Image & Video Divider					 */
+	/* ----------------------------------------------*/
+	.divider-wrapper {
+		padding: 70px 0;
+	}
+
+	.image-divider {
+		background-attachment: scroll;
+	}
+
+	/*-----------------------------------------------*/
+	/* 07.1.5 Popup Template						 */
+	/*-----------------------------------------------*/
+	#popup-template {
+		width: 90%;
+	}
+
+	/*-----------------------------------------------*/
+	/* 07.1.7 Popup Video							 */
+	/*-----------------------------------------------*/
+	.popup-video {
+		width: 80%;
+	}
+
+	/*-----------------------------------------------*/
+	/* 07.1.9 Box Countdown							 */
+	/*-----------------------------------------------*/
+	.box-countdown .countdown-amount {
+		font-size: 30px;
+		width: 80%;
+		padding-top: 38px;
+	}
+
+	.box-countdown .countdown-period {
+		font-size: 16px;
+		top: 75px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/*-----------------------------------------------*/
+	/* 07.1.11 Section Block						 */
+	/*-----------------------------------------------*/
+	.content-block {
+		padding: 60px 0;
+	}
+
+	/* ----------------------------------------------*/
+	/* 16.1 Our Story Section						 */
+	/* ----------------------------------------------*/
+	.story-row.row {
+		display: block;
+		padding: 20px 0
+	}
+
+	.story-row.row [class*="col-"] {
+		display: block;
+		text-align: center;
+	}
+
+	.story-date-wrapper {
+		margin-bottom: 55px;
+	}
+
+	.story-date {
+		float: none;
+		position: absolute;
+		top: -45px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.story-date .month-year {
+		font-family: 'Oswald', sans-serif;
+		font-size: 16px;
+		color: #FFF;
+	}
+
+	.arrow-right {
+		display: none;
+		float: none;
+	}
+
+	.arrow-left {
+		display: none;
+		float: none;
+	}
+
+	.vertical-line {
+		display: none;
+	}
+
+	#last-row-date-wrapper .story-date {
+		position: relative;
+		top: 0;
+	}
+
+	#last-row-date-wrapper {
+		position: relative;
+		padding: 0;
+		margin-top: 30px;
+	}
+
+	#end-of-story {
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	@media screen and (max-width: 991px) and (orientation: landscape) {
+
+		/*===============================================*/
+		/* 01. GENERAL			 						 */
+		/*===============================================*/
+		.scale75-onmobile {
+			-ms-transform: scale(0.75, 0.75);
+			-webkit-transform: scale(0.75, 0.75);
+			transform: scale(0.75, 0.75);
+		}
+
+		/* ----------------------------------------------*/
+		/* 02.2 Logo & Nav Position						 */
+		/* ----------------------------------------------*/
+		#nav-menu {
+			height: 230px !important;
+		}
+
+		/* 06.4.5 Couple Name Title 					 */
+		/* ----------------------------------------------*/
+		#slide-couplename-wrapper {
+			margin-top: 0;
+		}
+
+		#slide-other-text {
+			font-size: 12px;
+			letter-spacing: 4px;
+			margin-top: 50px;
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+
+		/*-----------------------------------------------*/
+		/* 07.1.9 Box Countdown							 */
+		/*-----------------------------------------------*/
+		.box-countdown {
+			height: 120px;
+			margin-bottom: 20px;
+		}
+
+		.box-countdown .countdown-amount {
+			font-size: 30px;
+			width: 80%;
+			padding-top: 34px;
+		}
+
+		.box-countdown .countdown-period {
+			font-size: 16px;
+			top: 64px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		/*===============================================*/
+		/* 12. FORM										 */
+		/*===============================================*/
+		form .btn {
+			width: 100%;
+			white-space: normal;
+		}
+	}
+
+
+	@media screen and (max-width: 480px) {
+
+		/*===============================================*/
+		/* 01. GENERAL			 						 */
+		/*===============================================*/
+		h1, .h1 {
+			font-size: 45px;
+			letter-spacing: 3px;
+		}
+
+		h1#accomodation-title {
+			font-size: 36px;
+			letter-spacing: 2px;
+		}
+
+		.scale75-onmobile {
+			-ms-transform: scale(0.75, 0.75);
+			-webkit-transform: scale(0.75, 0.75);
+			transform: scale(0.75, 0.75);
+		}
+
+		/* 06.4.3 Title Wrapper */
+		/* ----------------------------------------------*/
+		.slide-title h1,
+		.slide-title .h1 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		/* 06.4.5 Couple Name Title 					 */
+		/* ----------------------------------------------*/
+		#slide-couplename-wrapper {
+			margin-top: 0;
+		}
+
+		#slide-other-text {
+			font-size: 12px;
+			letter-spacing: 4px;
+			margin-top: 50px;
+		}
+
+		/* 07.1.1 Title-Excerpt White Box				 */
+		/* ----------------------------------------------*/
+		.title-excerpt {
+			padding: 20px;
+		}
+
+		/*-----------------------------------------------*/
+		/* 07.1.5 Popup Template						 */
+		/*-----------------------------------------------*/
+		#popup-template #the-content {
+			padding-right: 30px;
+			padding-left: 30px;
+			text-align: center;
+		}
+
+		/*-----------------------------------------------*/
+		/* 07.1.9 Box Countdown							 */
+		/*-----------------------------------------------*/
+		.box-countdown {
+			height: 90px;
+		}
+
+		.box-countdown .countdown-amount {
+			font-size: 26px;
+			width: 80%;
+			padding-top: 20px;
+		}
+
+		.box-countdown .countdown-period {
+			font-size: 14px;
+			top: 50px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		/*-----------------------------------------------*/
+		/* 07.1.10 Circle Countdown						*/
+		/*-----------------------------------------------*/
+		.circle-countdown .countdown-amount {
+			width: 45px;
+			height: 45px;
+			padding-top: 9px;
+			font-size: 20px;
+		}
+
+		.circle-countdown .countdown-period {
+			padding: 10px;
+			display: block;
+			text-align: center;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		/*===============================================*/
+		/* 11 MASONRY GALLERY							 */
+		/*===============================================*/
+		.masonry-col, .grid-sizer {
+			width: 100% !important;
+			margin-bottom: 5% !important;
+		}
+
+		/* ----------------------------------------------*/
+		/* 15.1 About / Story Page		 			 	 */
+		/* ----------------------------------------------*/
+		.profile-photo {
+			width: 140px;
+			height: 140px;
+		}
+	}
+
+
+	@media screen and (max-width: 320px) {
+		/* ----------------------------------------------*/
+		/* 13.1 Couple Section							 */
+		/* ----------------------------------------------*/
+		.couple-excerpt {
+			margin-top: 20px;
+		}
+
+		/* ----------------------------------------------*/
+		/* 13.4 Footer Section				 			 */
+		/* ----------------------------------------------*/
+		footer .image-divider.fixed-height {
+			height: 400px;
+		}
+	}
 }
