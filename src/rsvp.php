@@ -20,14 +20,14 @@
 			}
 		}
 	
-		$email_to  =  'your@email.com'; 
+		$email_to  =  'zdenek.tison@gmail.com,zani.t@centrum.cz,Jan.Rakowski@ibillboard.com';
 		
 		$headers = "From: ".$_POST["inputemail"]."\r\n";	
 		$headers .= "Reply-To: ".$_POST["inputemail"]."\r\n";	
-		$subject = "RSVP message from Mr/Mrs ".$_POST["inputname"];	
+		$subject = "Zprava ze svatebniho webu od: ".$_POST["inputname"];
 				
 		if(mail($email_to, $subject, $finalmessage, $headers)){
-        	$output = json_encode(array('type'=>'success', 'text' => 'Message Sent'));
+        	$output = json_encode(array('type'=>'success', 'text' => 'OK'));
     	}else{
         	$output = json_encode(array('type'=>'error', 'text' => 'Failed'));
    		}		
