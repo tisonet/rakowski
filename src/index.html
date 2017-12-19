@@ -349,7 +349,7 @@
                         <div class="row">
                             <div class="col-md-offset-1 col-md-10 text-center">
                                 <div id="save-date" class="animation fadeInUp">Svatba se koná</div>
-                                <h2 class="h1 animation fadeInUp" style="margin:30px 0">12. května 2018</h2>
+                                <h2 class="h1 animation fadeInUp" style="margin:30px 0;">12. května 2018</h2>
                                 <h5 class="animation fadeInUp" style="letter-spacing:6px; font-weight:400"></h5>
                             </div>
                         </div>
@@ -521,7 +521,24 @@
                         <br/>
                         <i>20:00</i> – zkouška novomanželů
                         <br/>
-                        <i>23:00</i> – hraje Dj Mike T - jeden z nejlepších brněnských dj‘s
+                    <i>23:00</i> – hraje <span onMouseOver="showVideoOnHover(this)" onMouseOut="hideVideo()">Dj Mike T</span> - jeden z nejlepších brněnských dj‘s
+
+                    <iframe id="youtube" width="100%" height="500px" style="display:none;">
+                    </iframe>
+                    <script type="text/javascript">
+
+                        function showVideoOnHover(obj)
+                        {
+                            $("#youtube").css("display","block").attr("src", "http://www.youtube.com/embed/x7GoRa13M-4?autoplay=1");
+                        }
+
+                        function hideVideo()
+                        {
+//                            $("#youtube").css("display","none");
+//                            $("#youtube").attr("src", "");
+                        }
+                    </script>
+
                     <p/>
 
                     <p>Po svatební hostině jsou časy orientační a program může být změněn dle potřeby a počasí.
@@ -535,6 +552,8 @@
                     <p/>
 
                     <p/>
+
+
 
                 </div>
             </div>
@@ -1222,7 +1241,7 @@
     <!-- END of GALLERY SECTION-->
 
    <!--RSVP SECTION-->
-    <section id="rsvp-section" class="section-block" style="padding-top: 0px">
+    <section id="rsvp-section" class="section-block" style="padding-top: 0">
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-1 col-md-10 text-center">
