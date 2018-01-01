@@ -564,7 +564,7 @@
  			type: 'image',
 			image: {
     			// options for image content type
-    			titleSrc: 'title'
+    			titleSrc: ''
  			},
 			//fixedContentPos:true,
 			callbacks: {
@@ -585,7 +585,7 @@
  			type: 'image',
 			image: {
     			// options for image content type
-    			titleSrc: 'title'
+    			titleSrc: ''
  			},
 			gallery: {
          		 enabled:true
@@ -601,8 +601,28 @@
   			},
 		});	 
 	}
-	 
-	// 06.7.3 Magnific Ajax
+
+        $('.magnific-map-gallery').magnificPopup({
+            type: 'image',
+            image: {
+                // options for image content type
+                titleSrc: 'title'
+            },
+            gallery: {
+                enabled:true
+            },
+            //fixedContentPos:true,
+            callbacks: {
+                open: function() {
+                    // Will fire when this exact popup is opened
+                },
+                afterClose: function() {
+                    // Will fire when popup is closed
+                }
+            },
+        });
+
+        // 06.7.3 Magnific Ajax
 	//----------------------------------------------------------------------------------
 	if ($(".magnific-ajax").length){
 		$('.magnific-ajax').magnificPopup({
